@@ -3,7 +3,7 @@ package annealingoven;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class OvenTimer {
+public abstract class OvenTimer {
     
     public double currentTemperature;
     public Timer timer;
@@ -28,11 +28,5 @@ public class OvenTimer {
         return currentTemperature;
     }
 	
-    public void Tick() {
-        
-    }
-	
-//    public static void main(String[] args) {
-//            
-//    }
+    public abstract void Tick();
 }
